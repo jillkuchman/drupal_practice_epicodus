@@ -1,0 +1,43 @@
+<?php
+
+function recipe_form_alter(&$form, &$form_state, $form_id) {
+
+    if ($form_id == 'recipes_node_form'){
+        $form['comment_settings']['comment']['#default_value'] = 1;
+
+        $form['menu'] = false;
+        $form['revision_information'] = false;
+        // $form['comment_settings'] = false;
+        $form['author'] = false;
+        $form['options'] = false;
+
+        print '<pre>';
+        print_r($form);
+        print '</pre>';
+
+        $form['comment_settings']['comment']['#default_value'] = 1;
+
+
+    }
+    // print_r($form_id);
+    // if ($form_id == 'node_type_form') {
+    //
+    //     //$form['comment']['comment']['#options'] = Array('Open', 'Hidden', 'Closed', 'Super Open');
+    //     $form['comment']['comment']['#default_value'] = 0;
+    //     print '<pre>';
+    //     print_r($form);
+    //     print '</pre>';
+    // }
+    // if ($form_id == 'recipes_node_form') {
+    //     print '<pre>';
+    //     print_r($form);
+    //     print '</pre>';
+    // $form['menu'] = false;
+    // $form['revision_information'] = false;
+    // $form['comment_settings'] = false;
+    // $form['author'] = false;
+    // $form['options'] = false;
+
+
+
+}

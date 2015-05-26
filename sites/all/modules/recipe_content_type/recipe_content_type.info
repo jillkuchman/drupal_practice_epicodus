@@ -1,0 +1,17 @@
+name = Recipe
+description = Adds recipe content type
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = recipe_content_type
+dependencies[] = features
+dependencies[] = recipe
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_ingredients
+features[field_base][] = field_instructions
+features[field_instance][] = node-recipes-body
+features[field_instance][] = node-recipes-field_ingredients
+features[field_instance][] = node-recipes-field_instructions
+features[node][] = recipes

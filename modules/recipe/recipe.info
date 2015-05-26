@@ -1,0 +1,4 @@
+name = Recipe Module
+description = Hides all of the menu tabs except for "URL path settings"
+core = 7.x
+package = Epicodus Examples
