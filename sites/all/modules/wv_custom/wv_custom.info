@@ -1,0 +1,4 @@
+name = Imdb + Drupal Networks
+description = Add imdb and drupal networks
+package = Epicodus Examples
+core = 7.x
